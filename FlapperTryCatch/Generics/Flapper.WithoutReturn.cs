@@ -26,8 +26,7 @@ public abstract partial class Flapper
             return this;
         }
 
-        public virtual void Execute()
-            => Execute(InjectInstability);
+        public abstract void Execute();
 
         protected void Execute(Action instabilityInjectionPoint)
         {
@@ -52,20 +51,6 @@ public abstract partial class Flapper
 
             handler.DynamicInvoke(ex);
             return true;
-        }
-
-        private static void InjectInstability()
-        {
-        }
-
-        public static new class TestHelper
-        {
-            public static string AddInstability<TType>(string instabilityHandlerName)
-                where TType : class
-            {
-                return Flapper.TestHelper
-                    .AddInstability<WithoutReturn<TDelegate, TCatchHandler>, TType>(instabilityHandlerName);
-            }
         }
     }
 }
