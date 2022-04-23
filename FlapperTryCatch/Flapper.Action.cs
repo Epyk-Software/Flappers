@@ -1,28 +1,27 @@
-﻿namespace FlapperTryCatch.Generics;
+﻿using HarmonyLib;
+using System.Reflection;
 
-public abstract partial class Flapper
+namespace FlapperTryCatch
 {
-    public abstract class WithoutReturn<TDelegate, TCatchHandler> : Flapper
-        where TDelegate : Delegate
-        where TCatchHandler : Delegate
+    public class Flapper
     {
-        protected readonly Dictionary<Type, TCatchHandler> catchHandlers;
-        protected TDelegate execute;
+        protected readonly Dictionary<Type, Action<Exception>> catchHandlers;
+        protected Action execute;
 
-        protected WithoutReturn(TDelegate execute)
+        protected Flapper(Action execute)
         {
             catchHandlers = new();
             this.execute = execute;
         }
 
-        //public static Flapper<TDelegate, TCatchHandler> Try(TDelegate @delegate)
-        //{
-        //    return new Flapper<TDelegate, TCatchHandler>(@delegate);
-        //}
-
-        public WithoutReturn<TDelegate, TCatchHandler> Catch<TException>(TCatchHandler handler) where TException : Exception
+        public static Flapper Try(Action execute)
         {
-            catchHandlers.Add(typeof(TException), handler);
+            return new Flapper(execute);
+        }
+
+        public Flapper Catch<TException>(Action<TException> handler) where TException : Exception
+        {
+            catchHandlers.Add(typeof(TException), (ex) => handler((TException)ex));
             return this;
         }
 
@@ -58,13 +57,18 @@ public abstract partial class Flapper
         {
         }
 
-        public static new class TestHelper
+        public static class TestHelper
         {
+            private static readonly Type flapperType = typeof(Flapper);
             public static string AddInstability<TType>(string instabilityHandlerName)
                 where TType : class
             {
-                return Flapper.TestHelper
-                    .AddInstability<WithoutReturn<TDelegate, TCatchHandler>, TType>(instabilityHandlerName);
+                return FlapperTestHelper.AddInstability(flapperType, typeof(TType), instabilityHandlerName);
+            }
+            public static string RemoveInstability<TType>(string instabilityHandlerName)
+                where TType : class
+            {
+                return FlapperTestHelper.RemoveInstability(flapperType, typeof(TType), instabilityHandlerName);
             }
         }
     }
