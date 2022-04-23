@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>0.0.0.1</Version>
+    <PackageId>Flapper.Try.Catch</PackageId>
+    <Authors>josuave83</Authors>
+    <Company>Flapper.Try.Catch</Company>
+    <Product>Flapper.Try.Catch</Product>
+    <Description>fluent try/catch</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.2.1" />
+  </ItemGroup>
+
+</Project>
