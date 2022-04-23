@@ -49,7 +49,7 @@ namespace FlapperTryCatch
                 return false;
             }
 
-            handler.DynamicInvoke(ex);
+            handler(ex);
             return true;
         }
 

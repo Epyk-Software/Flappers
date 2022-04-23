@@ -44,7 +44,7 @@
         {
             if (catchHandlers.TryGetValue(ex.GetType(), out var handler))
             {
-                result = (TExecuteResult)handler.DynamicInvoke(ex)!;
+                result = handler(ex);
                 return true;
             }
 
