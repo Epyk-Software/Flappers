@@ -7,9 +7,11 @@
     <Version>0.0.0.1</Version>
     <PackageId>Flapper.Try.Catch</PackageId>
     <Authors>josuave83</Authors>
-    <Company>Flapper.Try.Catch</Company>
+    <Company>Epyk</Company>
     <Product>Flapper.Try.Catch</Product>
     <Description>fluent try/catch</Description>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/Epyk-Software/Flapper.Try.Catch</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
