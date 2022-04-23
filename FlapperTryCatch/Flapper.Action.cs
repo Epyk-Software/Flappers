@@ -33,7 +33,7 @@ namespace FlapperTryCatch
             try
             {
                 instabilityInjectionPoint();
-                execute.DynamicInvoke();
+                execute();
             }
             catch (Exception ex)
             {

@@ -29,7 +29,7 @@
             try
             {
                 instabilityInjectionPoint();
-                return (TExecuteResult)execute.DynamicInvoke()!;
+                return execute();
             }
             catch (Exception ex)
             {
