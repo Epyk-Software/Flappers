@@ -4,12 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>0.0.0.2</Version>
+    <Version>0.0.0.3</Version>
     <PackageId>Flapper.Try.Catch</PackageId>
     <Authors>josuave83</Authors>
     <Company>Epyk</Company>
     <Product>Flapper.Try.Catch</Product>
-    <Description>fluent try/catch</Description>
+    <Description>A set of fluent try/catch wrappers that cut out some of the noise.</Description>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/Epyk-Software/Flapper.Try.Catch</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
