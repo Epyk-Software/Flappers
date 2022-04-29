@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>0.0.0.1</Version>
+    <PackageId>Flappers.TryCatch</PackageId>
+    <Authors>josuave83</Authors>
+    <Company>Epyk Software</Company>
+    <Product>Flappers.TryCatch</Product>
+    <Description>A set of fluent try/catch wrappers that help cut out some of the noise.</Description>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/Epyk-Software/Flappers</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Flappers.Core\Flappers.Core.csproj" />
+  </ItemGroup>
+
+</Project>

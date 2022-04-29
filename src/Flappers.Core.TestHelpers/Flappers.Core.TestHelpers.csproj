@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>0.0.0.1</Version>
+    <PackageId>Flappers.Core.TestHelpers</PackageId>
+    <Authors>josuave83</Authors>
+    <Company>Epyk Software</Company>
+    <Product>Flappers.Core.TestHelpers</Product>
+    <Description>Some helpful utility methods for mocking internal methods for testing purposes.</Description>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/Epyk-Software/Flappers</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.2.1" />
+  </ItemGroup>
+
+</Project>

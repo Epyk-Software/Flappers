@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>0.0.0.1</Version>
+    <PackageId>Flappers.Core</PackageId>
+    <Authors>josuave83</Authors>
+    <Company>Epyk Software</Company>
+    <Product>Flappers.Core</Product>
+    <Description>A set of fluent wrappers that can be used to setup flow control without stealing focus from the business logic.</Description>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/Epyk-Software/Flappers</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>
