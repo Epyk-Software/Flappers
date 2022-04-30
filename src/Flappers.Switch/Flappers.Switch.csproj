@@ -5,7 +5,7 @@
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>0.0.0.1</Version>
+    <Version>0.0.1</Version>
     <PackageId>Flappers.Switch</PackageId>
     <Authors>josuave83</Authors>
     <Company>Epyk Software</Company>
