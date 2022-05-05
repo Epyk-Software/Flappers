@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -6,11 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Version>0.0.1</Version>
-    <PackageId>Flappers.Switch</PackageId>
+    <PackageId>Flappers.Pipeline</PackageId>
     <Authors>josuave83</Authors>
     <Company>Epyk Software</Company>
-    <Product>Flappers.Switch</Product>
-    <Description>A set of fluent switch wrappers that help cut out some of the noise.</Description>
+    <Product>Flappers.Pipeline</Product>
+    <Description>A set of fluent pipeline wrappers help that cut out some of the noise.</Description>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/Epyk-Software/Flappers</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

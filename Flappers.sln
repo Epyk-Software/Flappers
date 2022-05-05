@@ -23,11 +23,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flappers.Core.Tests", "test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flappers.Core.TestHelpers", "src\Flappers.Core.TestHelpers\Flappers.Core.TestHelpers.csproj", "{74E81B21-0049-4165-A6F4-00AECD7F2307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappers.TryCatch.Tests", "tests\Flappers.TryCatch.Tests\Flappers.TryCatch.Tests.csproj", "{6A87AA07-29DF-4463-AB43-B45448036864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flappers.TryCatch.Tests", "tests\Flappers.TryCatch.Tests\Flappers.TryCatch.Tests.csproj", "{6A87AA07-29DF-4463-AB43-B45448036864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappers.Switch", "src\Flappers.Switch\Flappers.Switch.csproj", "{6B01E1D3-7910-4436-BA4D-B3C69EF63E1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flappers.Switch", "src\Flappers.Switch\Flappers.Switch.csproj", "{6B01E1D3-7910-4436-BA4D-B3C69EF63E1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappers.Switch.Tests", "tests\Flappers.Switch.Tests\Flappers.Switch.Tests.csproj", "{B4605711-721A-4CA3-9352-CC709EC2303A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flappers.Switch.Tests", "tests\Flappers.Switch.Tests\Flappers.Switch.Tests.csproj", "{B4605711-721A-4CA3-9352-CC709EC2303A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{77216CA8-0EB2-4340-A0C9-5DAA9286F20D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flappers.Examples.WebApi", "examples\Flappers.Examples.WebApi\Flappers.Examples.WebApi.csproj", "{0782CD0C-FD67-410E-A4E0-FEB7CD29B5DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappers.Pipeline.Tests", "tests\Flappers.Pipeline.Tests\Flappers.Pipeline.Tests.csproj", "{84529FA2-FDC2-4C01-964E-CD0F6FE03C98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flappers.Pipeline", "src\Flappers.Pipeline\Flappers.Pipeline.csproj", "{6F0C2C89-D397-403D-AD8D-81E87EEB9B7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +71,18 @@ Global
 		{B4605711-721A-4CA3-9352-CC709EC2303A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4605711-721A-4CA3-9352-CC709EC2303A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4605711-721A-4CA3-9352-CC709EC2303A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0782CD0C-FD67-410E-A4E0-FEB7CD29B5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0782CD0C-FD67-410E-A4E0-FEB7CD29B5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0782CD0C-FD67-410E-A4E0-FEB7CD29B5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0782CD0C-FD67-410E-A4E0-FEB7CD29B5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84529FA2-FDC2-4C01-964E-CD0F6FE03C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84529FA2-FDC2-4C01-964E-CD0F6FE03C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84529FA2-FDC2-4C01-964E-CD0F6FE03C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84529FA2-FDC2-4C01-964E-CD0F6FE03C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0C2C89-D397-403D-AD8D-81E87EEB9B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0C2C89-D397-403D-AD8D-81E87EEB9B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0C2C89-D397-403D-AD8D-81E87EEB9B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0C2C89-D397-403D-AD8D-81E87EEB9B7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +95,9 @@ Global
 		{6A87AA07-29DF-4463-AB43-B45448036864} = {B9A0D950-16B2-4F9A-8460-2ED4F98D9987}
 		{6B01E1D3-7910-4436-BA4D-B3C69EF63E1A} = {5147E960-7C66-48A8-8934-4EF8020CAE43}
 		{B4605711-721A-4CA3-9352-CC709EC2303A} = {B9A0D950-16B2-4F9A-8460-2ED4F98D9987}
+		{0782CD0C-FD67-410E-A4E0-FEB7CD29B5DB} = {77216CA8-0EB2-4340-A0C9-5DAA9286F20D}
+		{84529FA2-FDC2-4C01-964E-CD0F6FE03C98} = {B9A0D950-16B2-4F9A-8460-2ED4F98D9987}
+		{6F0C2C89-D397-403D-AD8D-81E87EEB9B7F} = {5147E960-7C66-48A8-8934-4EF8020CAE43}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19CD4358-8D54-4058-9953-1D3F2678C661}
